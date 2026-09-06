@@ -1,12 +1,12 @@
 name: My first workflow
-on: [push, workflow_dispatch]
+on: push
 
 jobs:
   My-first-job: 
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hellow World!"
   My-second-job:
-    run-on: : ubuntu-latest
+    runs-on: : ubuntu-latest
     steps:
       - run: echo "Bye World"
