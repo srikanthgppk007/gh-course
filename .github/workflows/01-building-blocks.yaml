@@ -2,11 +2,12 @@ name: My first workflow
 on: push
 
 jobs:
-  My-first-job: 
+  echo-hello: 
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hellow World!"
-  My-second-job:
-    runs-on: : ubuntu-latest
+      - name: say hello
+        run: echo "Hello World!"
+  echo-goodbye:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Bye World"
